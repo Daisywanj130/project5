@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer feed back</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #ede7f6;
+            background-image: linear-gradient(45deg,#efefef 25%,rgba(239,239,239,0) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef),linear-gradient(45deg,#efefef 25%,rgba(239,239,239,0) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef);
+            background-position: 0 0,10px 10px;
+            background-size: 21px 21px;
+            font-family: "montserrat", sans-serif;
+        }
+        .forms{
+            height: 1100px;
+            width: 600px;
+            margin: auto;
+        }
+        .required{
+            font-size: 20px;
+            color: red;
+        }
+        .header{
+            height: 150px;
+            width: 600px;
+            background-color: #fdfefe;
+            margin: 15px;
+            border-radius: 8px;
+            border-top: 8px solid #06b0ff;
+            padding:20px;
+        }
+        .rate-customer,
+        .input-feedback,
+        .quality-product,
+        .navigate-web,
+        .recommendation,
+        .additional-info{
+            height: 150px;
+            width: 700px;
+            background-color: #fdfefe;
+            margin: 15px;
+            border-radius: 10px;
+        }
+       
+    </style>
+  </head>
+  
+  
+  <body>
+    
+    <form class="forms">
+        <div class="header">
+            <h1>Clients feedback survey</h1>
+            <p>Feel free to share your feedback with us.This information will help in identifying key areas we need to improve</p>
+            <p class="required">*Required</p>
+        </div>
+        
+        <br />
+        <div class="rate-customer">
+            <label for="rates">
+                <h4>Please rate your overall satisfaction with our product/service on a scale of 1 to 10:<span class="required">*</span></h4>
+            </label>
+            <input
+                type="number"
+                id="rates"
+                name="products rate"
+                min="1"
+                max="10"
+                required
+            />
+        </div>
+        <div class="input-feedback">
+            <h4>
+                We value your input! Please share any specific feedback or suggestions
+                for improvement:<span class="required">*</span>
+            </h4>
+            <textarea
+                rows="4"
+                cols="50"
+                placeholder="write your feed back here"
+                required
+            ></textarea>
+        </div>
+        <div class="quality-product">
+            <h4>
+                How would you rate the quality of our product/service on the scale of
+                1 to 5:<span class="required">*</span>
+            </h4>
+            <input type="radio" id="Very Dissatisfied" name="quality" required />
+            <label for="Very Dissatisfied">Very Dissatisfied</label><br />
+
+            <input type="radio" id="Dissatisfied" name="quality" />
+            <label for="Dissatisfied">Dissatisfied</label><br />
+
+            <input type="radio" id="Neutral" name="quality" />
+            <label for="Neutral">Neutral</label><br />
+
+            <input type="radio" id="satisfied" name="quality" />
+            <label for="satisfied">satisfied</label><br />
+
+            <input type="radio" id="Very satisfied" name="quality" />
+            <label for="Very satisfied">Very satisfied</label>
+        </div>
+        <div class="navigate-web">
+            <h4>
+                How easy was it for you to navigate our website or use
+                product/service?<span class="required">*</span>
+            </h4>
+            <input type="radio" id="very difficult" name="navigation" required />
+            <label for="very difficult">Very difficult</label><br />
+
+            <input type="radio" id="difficult" name="navigation" />
+            <label for="difficult">Difficult</label><br />
+
+            <input type="radio" id="fair" name="navigation" />
+            <label for="fair">Fair</label><br />
+
+            <input type="radio" id="easy" name="navigation" />
+            <label for="easy">Easy</label><br />
+
+            <input type="radio" id="very easy" name="navigation" />
+            <label for="very easy">Very Easy</label><br />
+        </div>
+        <div class="recommendation">
+            <h4>
+                On a scale of 1 to 10, how likely would you recommend our
+                product/services to other?<span class="required">*</span>
+            </h4>
+            <input type="number" min="1" max="10" required>
+        </div>
+        <div class="additional-info">
+            <h4>Is there anything else you would like to share with us?</h4>
+            <textarea rows="4" cols="50"></textarea>
+        </div><br>
+        <div>
+            <input type="submit" value="submit">
+            
+        </div>
+    </form>
+    
+    
+  </body>
+</html>
