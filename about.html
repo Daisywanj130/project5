@@ -1,58 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Bliss Shopping</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        About
-    </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<style>
-    img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 360px;
-        height: 480px;
-    }
-    h2{
-        text-align: center;
-        color: red;
-    }
-    body{
-        background-color: rgb(228,224,238);
-        font-family: "Montserrat", sans-serif;
-    }
-    
-</style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>Welcome to Bliss online shopping!</h1> 
-    <div>
-        <h2>Our mission</h2>
-        <p>We're your one-stop destination for all things fabulous and convenient. At Bliss, we believe that shopping should be a joyful and hassle-free experience. That's why we've curated a wide range of products to cater to your every need and desire.</p>
-        <img src="./Bliss.jpg" alt="blissful" >
+    <header>
+        <nav>
+            <h1 >Bliss</h1>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </header>
+    <div class="about-con">
+        <div class="images-con">
+            <div class="img-1"><img src="./images/Team.jpg" ></div>
+            <div class="img-2"><img src="./images/business (1).jpg"></div>
+            <div class="img-3"><img src="./images/girl.jpg"></div>
+        </div>
+        <div class="about-content">
+            <h1>About us</h1>
+            <h2>Who are we?</h2>
+            <p>Welcome to Bliss Online Shopping! We are a passionate team dedicated to bringing you the best shopping experience. Our journey began with a simple idea: to provide a curated selection of high-quality products that bring joy to your life.
+            
+                At Bliss, we believe in the power of connection and community. That's why we handpick each item with care, ensuring that it meets our standards of excellence. From trendy fashion pieces to must-have gadgets, we strive to offer a diverse range of products that cater to your unique tastes and preferences.
+                
+                What sets us apart is our commitment to customer satisfaction. We value your trust and strive to exceed your expectations at every step. Our friendly and knowledgeable team is always ready to assist you, whether you have a question about a product or need help with your order.
+                
+                But Bliss Online Shopping is more than just an e-commerce platform. We are a community of like-minded individuals who share a passion for style, convenience, and happiness. Join us on this exciting journey and discover the joy of shopping with Bliss.
+                
+                Thank you for choosing Bliss Online Shopping. We can't wait to help you find your next favorite item!</p>  
+            <br><br>
+            <div class="btn-a">
+                <a href="contact.html" class="button">Contact Us</a>
+                <a href="Aboutus.html" class="button">Learn More</a>
+            </div>
+        </div>
     </div>
-    <div>
-        <h2>What we do</h2>
-        <p>With our user-friendly interface, you can easily browse through our collection of trendy fashion, stylish accessories, home decor, gadgets, and so much more. We work tirelessly to bring you high-quality products from trusted brands, ensuring that you get the best value for your money.</p>
-    </div>
-    <div>
-        <h2>Customer service</h2>
-        <p> It's not just about the products at Bliss. We're committed to providing exceptional customer service and creating a community of happy shoppers. Our dedicated team is always here to assist you, answer your questions, and make your shopping experience as smooth as possible.</p>
-        <img src="./happy.jpg" alt="happiness">
-    </div><br>
-
-    <div>We understand that your time is precious, so we've made it our mission to deliver your purchases right to your doorstep, quickly and securely. Sit back, relax, and let us take care of the rest.<br>
-        <i style="background-color: yellowgreen;">Join the Bliss community today and discover the joy of online shopping. Get ready to indulge in a blissful experience that will leave you wanting more!</i>
-    </div><br>
-    <div>
-        <p>Happy shopping,</p>
-        <p>The Bliss Online Shopping Team!</p>
-    </div>
-    
-    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Bliss Online Shopping</h4>
+                    <p>Bliss Online Shopping, we are committed to providing you with the best online shopping experience.</p>
+                    <div class="footer-icons">
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/daisy_klgh?igsh=MThjY2J3NWRtejJkYw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://discord.com/channels/@me" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            <h5>Masai w road,hardy</h5>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            <h5>+254 794685921</h5>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            <h5>blissshoppping@gmail.com</h5>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+  
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+    </script>  
 </body>
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Bliss shoppping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="m-container">
+        <div class="header2">
+            <header>
+                <nav>
+                    <h1 >Bliss</h1>
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </header>
+            <div>
+                <h2>About Us</h2>
+            </div>
+        </div>
+        <div class="block">
+            <div class="image">
+                <img src="./images/Bliss.jpg" alt="Mission">
+            </div>
+            <div class="content">
+                <h5>Our Mission</h5>
+                <p>We're your one-stop destination for all things fabulous and convenient. At Bliss, we believe that shopping should be a joyful and hassle-free experience. That's why we've curated a wide range of products to cater to your every need and desire.</p>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="image">
+                <img src="./images/Vision.jpg" alt="Our Vision">
+            </div>
+            <div class="content">
+                <h5>Our Vision</h5>
+                <p>To provide a seamless and convenient shopping experience for customers, offering a wide range of high-quality products at competitive prices.</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="image">
+                <img src="./images/happy.jpg" alt="Our Services">
+            </div>
+            <div class="content">
+                <h5>What we do</h5>
+                <p>With our user-friendly interface, you can easily browse through our collection of trendy fashion, stylish accessories, home decor, gadgets, and so much more. We work tirelessly to bring you high-quality products from trusted brands, ensuring that you get the best value for your money.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Bliss Online Shopping</h4>
+                    <p>Bliss Online Shopping, we are committed to providing you with the best online shopping experience.</p>
+                    <div class="footer-icons">
+                        <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/daisy_klgh?igsh=MThjY2J3NWRtejJkYw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            <h5>Masai w road,hardy</h5>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            <h5>+254 794685921</h5>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            <h5>blissshoppping@gmail.com</h5>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+  
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,113 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Bliss Shopping</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shopping</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="https://www.drupal.org/files/issues/2020-02-20/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
-<body id="home">
-    <nav>
-        <div class="header">
-            <p>Bliss online shopping</p>
-        </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="form.html">Reviews</a></li>
-        </ul>
-    </nav>
-        <br>    
-            
-    <div class="bliss">
-        <div class="product">
-            <h3>Cargo pant</h3>
-            <img src="./cargo.jpg" alt="cargo pant" class="cargo">
-            <p>Women Cargo pants Wide leg pockets Spring Autumn Fashion</p>
-            <h4>ksh 1500</h4>
-            <p class="inf">in stock</p>
-            <ul class="ul">
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-            </ul>
-            <button class="btn-1">Buy now</button>
-
-        </div>
-        <div class="product">
-            <h3>Watch</h3>
-            <img src="./watch.jpg" alt="cargo pant" class="watch">
-            <p>Golden Rose watch for women</p>
-            <h4>ksh 500</h4>
-            <p class="inf">in stock</p>
-            <ul class="ul">
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star "></i></li>
-            </ul>
-            <button class="btn-2">Buy now</button>
-            
-
-        </div>
-        <div class="product">
-            <h3>sneakers</h3>
-            <img src="./sneakers.jpg" alt="sneakers" class="sneakers">
-            <p>Women Cargo pants Wide leg pockets Spring Autumn Fashion</p>
-            <h4>ksh 3500</h4>
-            <p class="inf">in stock</p>
-            <ul class="ul">
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star "></i></li>
-            </ul>
-            <button class="btn-3">Buy now</button>
-            
-
-        </div>
-        <div class="product">
-            <h3>brushes</h3>
-            <img src="./brushes.jpg" alt="brushes" class="makeup">
-            <p>high quality makeup brushes </p>
-            <h4>ksh 2000</h4>
-            <p class="inf">in stock</p>
-            <ul class="ul">
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star "></i></li>
-            </ul>
-            <button class="btn-4">Buy now</button>
-            
-
-        </div>
-        <div class="product">
-            <h3>Tote bags</h3>
-            <img src="./bags.jpg" alt="tote-bag" class="tote-bag">
-            <p>tote bags different colors and sizes</p>
-            <h4>ksh 300</h4>
-            <p class="inf">in stock</p>
-
-            <ul class="ul">
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star checked"></i></li>
-                <li><i class="fa fa-star "></i></li>
-                <li><i class="fa fa-star "></i></li>
-            </ul>
-            <button class="btn-5">Buy now</button>
-            
-
-        </div>
+<body>
+    <div class="header">
+        <header>
+            <nav>
+                <h1 >Bliss</h1>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </header>
+        <main>
+            <section>
+              <h2>Featured Products</h2>
+              <!-- Add your product cards or listings here -->
+            <div class="bliss">
+                <div class="product">
+                    <h3 class="p-title">Cargo pant</h3>
+                    <img src="images/cargo.jpg" alt="cargo pant" class="image-p">
+                    <p class="desc">Women Cargo pants Wide leg pockets Spring Autumn Fashion</p>
+                    <h4 class="price">ksh 1500</h4>
+                    <p class="inf">in stock</p>
+                    <ul class="ul">
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                    </ul>
+                    <button class="btn">Buy now</button>
         
-    </div> 
+                </div>
+                <div class="product">
+                    <h3 class="p-title">Watch</h3>
+                    <img src="images/watch.jpg" alt="Watch" class="image-p">
+                    <p class="desc">Golden Rose watch for women</p>
+                    <h4 class="price">ksh 500</h4>
+                    <p class="inf">in stock</p>
+                    <ul class="ul">
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star "></i></li>
+                    </ul>
+                    <button class="btn">Buy now</button>
+                    
+        
+                </div>
+                <div class="product">
+                    <h3 class="p-title">Watch</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTUNB_ZtwCNG6b_9Jv6p6xIZaxLO43jfaa892bHrJpvKwomrkcK8QEpm78lKzW_gUzkvQeWVl7QsWN3CvPzEThjGtmsWYnw9iIRgs72W7GTUY2godVmAtuG&usqp=CAc" alt="Bracelet" class="image-p">
+                    <p class="desc">2pcs bracelet for women</p>
+                    <h4 class="price">ksh 199</h4>
+                    <p class="inf">in stock</p>
+                    <ul class="ul">
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star "></i></li>
+                    </ul>
+                    <button class="btn">Buy now</button>
+                    
+        
+                </div>
+                <div class="product">
+                    <h3 class="p-title">sneakers</h3>
+                    <img src="images/sneakers.jpg" alt="sneakers" class="image-p">
+                    <p class="desc">Women Cargo pants Wide leg pockets Spring Autumn Fashion</p>
+                    <h4 class="price">ksh 3500</h4>
+                    <p class="inf">in stock</p>
+                    <ul class="ul">
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star "></i></li>
+                    </ul>
+                    <button class="btn">Buy now</button>
+                    
+        
+                </div>
+                <div class="product">
+                    <h3 class="p-title">brushes</h3>
+                    <img src="images/brushes.jpg" alt="brushes" class="image-p">
+                    <p class="desc">high quality makeup brushes </p>
+                    <h4 class="price">ksh 2000</h4>
+                    <p class="inf">in stock</p>
+                    <ul class="ul">
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star "></i></li>
+                    </ul>
+                    <button class="btn">Buy now</button>
+                    
+        
+                </div>
+                <div class="product">
+                    <h3 class="p-title">Tote bags</h3>
+                    <img src="images/bags.jpg" alt="tote-bag" class="image-p">
+                    <p class="desc">tote bags different colors and sizes</p>
+                    <h4 class="price">ksh 300</h4>
+                    <p class="inf">in stock</p>
+        
+                    <ul class="ul">
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star checked"></i></li>
+                        <li><i class="fa fa-star "></i></li>
+                        <li><i class="fa fa-star "></i></li>
+                    </ul>
+                    <button class="btn">Buy now</button>
+                    
+        
+                </div>
+            </div>
+            </section>
+    
+          </main>
+          <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Bliss Online Shopping</h4>
+                        <p>Bliss Online Shopping, we are committed to providing you with the best online shopping experience.</p>
+                        <div class="footer-icons">
+                            <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/daisy_klgh?igsh=MThjY2J3NWRtejJkYw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://discord.com/channels/@me" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="About.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Contact</h3>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                                <h5>Masai w road,hardy</h5>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                <h5>+254 794685921</h5>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>
+                                <h5>blissshoppping@gmail.com</h5>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+  
+        function openmenu() {
+          sidemenu.style.right = "0";
+        }
+        function closemenu() {
+          sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+    
 </body>
 </html>
