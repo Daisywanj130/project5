@@ -363,7 +363,7 @@ text-align: center;
     transition: 0.2s;
 }
 .header2{
-    background-image: url(/images/About.jpg);
+    background-image: url(./images/About.jpg);
     background-size: cover;
     background-position: center;
     height: 400px;
