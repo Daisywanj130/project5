@@ -136,7 +136,7 @@ text-align: center;
 
 /* contact us page */
 .header1{
-    background-image: url(/images/contact.jpg);
+    background-image: url(./images/contact.jpg);
     background-size: cover;
     background-position: center;
     height: 350px;
